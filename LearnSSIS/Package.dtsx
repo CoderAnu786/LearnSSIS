@@ -11,8 +11,8 @@
   DTS:LocaleID="16393"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{A276E13F-17E7-43A3-A8B1-5F9C6AB5E967}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{190CF585-76B0-4784-9855-5DF6330309B5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -26,18 +26,6 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SSISLearnDB;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package-{C4111FE0-4739-4B57-84D3-53AD8371362E}(localdb)\MSSQLLocalDB.SSISLearnDB;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[(localdb)\MSSQLLocalDB.SSISLearnDB 1]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{694C7199-A405-4A94-8A46-139FB25C406F}"
-      DTS:ObjectName="(localdb)\MSSQLLocalDB.SSISLearnDB 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SSISLearnDB;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package-{694C7199-A405-4A94-8A46-139FB25C406F}(localdb)\MSSQLLocalDB.SSISLearnDB 1;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -424,8 +412,8 @@
               <connections>
                 <connection
                   refId="Package\Load Data from csv file to sql table\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[(localdb)\MSSQLLocalDB.SSISLearnDB 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[(localdb)\MSSQLLocalDB.SSISLearnDB 1]"
+                  connectionManagerID="Package.ConnectionManagers[(localdb)\MSSQLLocalDB.SSISLearnDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[(localdb)\MSSQLLocalDB.SSISLearnDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
