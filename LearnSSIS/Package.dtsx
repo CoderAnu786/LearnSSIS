@@ -11,8 +11,8 @@
   DTS:LocaleID="16393"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{C0C91728-8E78-4941-AB73-F93E1F93458E}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{A276E13F-17E7-43A3-A8B1-5F9C6AB5E967}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -119,13 +119,13 @@
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Data Flow Task"
+      DTS:refId="Package\Load Data from csv file to sql table"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{D87E0FB2-391D-466E-8531-42E69350E1E9}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Data Flow Task"
+      DTS:ObjectName="Load Data from csv file to sql table"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -133,7 +133,7 @@
           version="1">
           <components>
             <component
-              refId="Package\Data Flow Task\Flat File Source"
+              refId="Package\Load Data from csv file to sql table\Flat File Source"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
@@ -153,25 +153,25 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
+                  refId="Package\Load Data from csv file to sql table\Flat File Source.Connections[FlatFileConnection]"
                   connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
                   connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]"
+                  refId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output]"
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
+                      refId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
+                      externalMetadataColumnId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
+                      lineageId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
                       name="id"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -186,14 +186,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[first_name]"
+                      refId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].Columns[first_name]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[first_name]"
+                      externalMetadataColumnId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[first_name]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[first_name]"
+                      lineageId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].Columns[first_name]"
                       name="first_name"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -208,14 +208,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[last_name]"
+                      refId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].Columns[last_name]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[last_name]"
+                      externalMetadataColumnId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[last_name]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[last_name]"
+                      lineageId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].Columns[last_name]"
                       name="last_name"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -230,14 +230,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[email]"
+                      refId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].Columns[email]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[email]"
+                      externalMetadataColumnId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[email]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[email]"
+                      lineageId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].Columns[email]"
                       name="email"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -252,14 +252,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[gender]"
+                      refId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].Columns[gender]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[gender]"
+                      externalMetadataColumnId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[gender]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[gender]"
+                      lineageId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].Columns[gender]"
                       name="gender"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -274,14 +274,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ip_address]"
+                      refId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].Columns[ip_address]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ip_address]"
+                      externalMetadataColumnId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ip_address]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ip_address]"
+                      lineageId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].Columns[ip_address]"
                       name="ip_address"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -299,37 +299,37 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
+                      refId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[first_name]"
+                      refId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[first_name]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="first_name" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[last_name]"
+                      refId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[last_name]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="last_name" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[email]"
+                      refId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[email]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="email" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[gender]"
+                      refId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[gender]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="gender" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ip_address]"
+                      refId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ip_address]"
                       codePage="1252"
                       dataType="str"
                       length="50"
@@ -337,27 +337,27 @@
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output]"
+                  refId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Error Output]"
                   isErrorOut="true"
                   name="Flat File Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      refId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       codePage="1252"
                       dataType="text"
                       description="Flat File Source Error Output Column"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      lineageId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       name="Flat File Source Error Output Column" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -366,7 +366,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\OLE DB Destination"
+              refId="Package\Load Data from csv file to sql table\OLE DB Destination"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
@@ -423,7 +423,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
+                  refId="Package\Load Data from csv file to sql table\OLE DB Destination.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[(localdb)\MSSQLLocalDB.SSISLearnDB 1]"
                   connectionManagerRefId="Package.ConnectionManagers[(localdb)\MSSQLLocalDB.SSISLearnDB 1]"
                   description="The OLE DB runtime connection used to access the database."
@@ -431,95 +431,95 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  refId="Package\Load Data from csv file to sql table\OLE DB Destination.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[id]"
+                      refId="Package\Load Data from csv file to sql table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[id]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="id"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[id]" />
+                      externalMetadataColumnId="Package\Load Data from csv file to sql table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                      lineageId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].Columns[id]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[first_name]"
+                      refId="Package\Load Data from csv file to sql table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[first_name]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="first_name"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[first_name]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[first_name]" />
+                      externalMetadataColumnId="Package\Load Data from csv file to sql table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[first_name]"
+                      lineageId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].Columns[first_name]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[last_name]"
+                      refId="Package\Load Data from csv file to sql table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[last_name]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="last_name"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[last_name]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[last_name]" />
+                      externalMetadataColumnId="Package\Load Data from csv file to sql table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[last_name]"
+                      lineageId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].Columns[last_name]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[email]"
+                      refId="Package\Load Data from csv file to sql table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[email]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="email"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[email]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[email]" />
+                      externalMetadataColumnId="Package\Load Data from csv file to sql table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[email]"
+                      lineageId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].Columns[email]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[gender]"
+                      refId="Package\Load Data from csv file to sql table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[gender]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="gender"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[gender]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[gender]" />
+                      externalMetadataColumnId="Package\Load Data from csv file to sql table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[gender]"
+                      lineageId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].Columns[gender]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ip_address]"
+                      refId="Package\Load Data from csv file to sql table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ip_address]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="ip_address"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ip_address]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ip_address]" />
+                      externalMetadataColumnId="Package\Load Data from csv file to sql table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ip_address]"
+                      lineageId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output].Columns[ip_address]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                      refId="Package\Load Data from csv file to sql table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[first_name]"
+                      refId="Package\Load Data from csv file to sql table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[first_name]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="first_name" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[last_name]"
+                      refId="Package\Load Data from csv file to sql table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[last_name]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="last_name" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[email]"
+                      refId="Package\Load Data from csv file to sql table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[email]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="email" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[gender]"
+                      refId="Package\Load Data from csv file to sql table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[gender]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="gender" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ip_address]"
+                      refId="Package\Load Data from csv file to sql table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ip_address]"
                       codePage="1252"
                       dataType="str"
                       length="50"
@@ -529,22 +529,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\Load Data from csv file to sql table\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\Load Data from csv file to sql table\OLE DB Destination.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\Load Data from csv file to sql table\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Load Data from csv file to sql table\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\Load Data from csv file to sql table\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Load Data from csv file to sql table\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -555,10 +555,10 @@
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task.Paths[Flat File Source Output]"
-              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              refId="Package\Load Data from csv file to sql table.Paths[Flat File Source Output]"
+              endId="Package\Load Data from csv file to sql table\OLE DB Destination.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]" />
+              startId="Package\Load Data from csv file to sql table\Flat File Source.Outputs[Flat File Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -577,66 +577,52 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Data Flow Task"
-          TopLeft="231.666657461061,215.800001715024" />
+          Size="237.6,41.6"
+          Id="Package\Load Data from csv file to sql table"
+          TopLeft="403.333317306307,198.466668243938" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Data Flow Task">
+    design-time-name="Package\Load Data from csv file to sql table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="151.2,41.6"
-          Id="Package\Data Flow Task\Flat File Source"
+          Id="Package\Load Data from csv file to sql table\Flat File Source"
           TopLeft="431.5,118.5" />
         <NodeLayout
           Size="171.2,41.6"
-          Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="439,262" />
+          Id="Package\Load Data from csv file to sql table\OLE DB Destination"
+          TopLeft="419.833334094948,216.933332975176" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="507.1,160.1">
+          Id="Package\Load Data from csv file to sql table.Paths[Flat File Source Output]"
+          TopLeft="506.266667047474,160.1">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="17.4999999999999,101.9"
+              EndConnector="0,56.8333329751756"
               Start="0,0"
-              End="17.4999999999999,94.3999999999999">
+              End="0,49.3333329751756">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,46.95" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,46.95"
-                    Point2="0,50.95"
-                    Point3="4,50.95" />
-                  <mssgle:LineSegment
-                    End="13.4999999999999,50.95" />
-                  <mssgle:CubicBezierSegment
-                    Point1="13.4999999999999,50.95"
-                    Point2="17.4999999999999,50.95"
-                    Point3="17.4999999999999,54.95" />
-                  <mssgle:LineSegment
-                    End="17.4999999999999,94.3999999999999" />
+                    End="0,49.3333329751756" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-16.0594726562501,55.95,49.6189453125,11.2236328125"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    design-time-name="Package\Load Data from csv file to sql table\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
